@@ -12,23 +12,23 @@ Definition 2.1.
 The disciplinary action for plagiarism is an award of an F grade (fail) for the course. Serious instances of
 plagiarism will result in Compulsory Withdrawal from the university.
 
-Q1) Recursive methods (3 points)
+## Q1) Recursive methods (3 points)
 In this part you will implement some recursive methods. Your starting point is the file Recursion.java. Your task is
 to complete the methods as described below.
 Unit tests in RecursionTest.java will check your implementations.
 
-Q1A) Recursive sum of numbers
+## Q1A) Recursive sum of numbers
 Write a recursive method sum that, given a number n, returns the sum of all positive numbers up to n - that is, it
 computes:
 sum(n) = 1 + 2 + ... + n
 See Hint 1 if you are stuck.
 
-Q1B) Recursive multiplication using only addition
+## Q1B) Recursive multiplication using only addition
 Write a recursive method multiply which given two integers m and n as arguments, computes m*n using only
 Java’s addition operator + and recursion. Your implementation cannot use Java’s multiplication operator *. See
 Hint 2 if you are stuck.
 
-Q1C) Compute Fibonacci number
+## Q1C) Compute Fibonacci number
 The Fibonacci sequence is 0,1,1,2,3,5,8,13,21,34,.... You should write a method Fibonacci which given n as an
 argument, returns the nth Fibonacci number using recursion, that is
 Fibonacci(0) = 0
@@ -43,7 +43,7 @@ Fibonacci(8) = 21
 and so on.
 See Hint 3 if you are stuck.
 
-Q2) The Tower of Hanoi (2 points)
+## Q2) The Tower of Hanoi (2 points)
 The Tower of Hanoi is a game that has a very elegant recursive solution. The goal is to move all rings of tower A to
 tower B:
 However, you must adhere to the following rules
@@ -59,7 +59,7 @@ game.playHanoi();
 Where rings is an integer value which is the number of rings starting on tower A.
 A template for your implementation is in the file Hanoi.java.
 
-Q2A) Implement moving one ring
+## Q2A) Implement moving one ring
 You should implement moving one ring by implementing the method:
 public static void moveOneRing(int from, int to){
 /* TODO */
@@ -80,7 +80,7 @@ The idea is to take a ring from the top of the from tower (where from is an arra
 the top of the to tower.
 The tests are not expected to pass at this point.
 
-Q2B) Implementing moving a pile
+## Q2B) Implementing moving a pile
 You are to implement the Hanoi game in a recursive programming style. The movePile method should
 coordinate the order of calls to moveOneRing that you implemented for the previous question. The sequencing
 of moveOneRing calls should stick to the rules of the Hanoi game and should successfully move all rings from
@@ -107,7 +107,7 @@ violated, a HanoiException is thrown and the JUnit test will fail.
 If you have correctly implemented the two Java methods, all JUnit tests should pass now.
 Run the file with JUnit to test your implementation.
 
-Q3) Code Quality (1 point)
+## Q3) Code Quality (1 point)
 Code quality is vitally important for so many reasons. Not least, for readability and maintainability, not
 just for yourself but for others too since in industry, software engineering is almost always a group
 exercise. Real world software engineering is mostly about refactoring and testing code, rather than
